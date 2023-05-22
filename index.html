@@ -196,13 +196,35 @@
       var favTasteHashtags = document.getElementById("favTasteHashtags");
       var dislikeTasteHashtags = document.getElementById("dislikeTasteHashtags");
 
-      var tastes = [
-        document.querySelector('input[name="taste1"]:checked').value,
-        document.querySelector('input[name="taste2"]:checked').value,
-        document.querySelector('input[name="taste3"]:checked').value,
-        document.querySelector('input[name="taste4"]:checked').value,
-        document.querySelector('input[name="taste5"]:checked').value
-      ];
+      // 각 맛에 대한 점수 초기화
+      var taste1Score = 0;
+      var taste2Score = 0;
+      var taste3Score = 0;
+      var taste4Score = 0;
+      var taste5Score = 0;
+
+      // 각 맛에 대한 점수 계산
+      var selectedTaste1 = document.querySelector('input[name="taste1"]:checked');
+      var selectedTaste2 = document.querySelector('input[name="taste2"]:checked');
+      var selectedTaste3 = document.querySelector('input[name="taste3"]:checked');
+      var selectedTaste4 = document.querySelector('input[name="taste4"]:checked');
+      var selectedTaste5 = document.querySelector('input[name="taste5"]:checked');
+
+      if (selectedTaste1 !== null) {
+        taste1Score = selectedTaste1.value;
+      }
+      if (selectedTaste2 !== null) {
+        taste2Score = selectedTaste2.value;
+      }
+      if (selectedTaste3 !== null) {
+        taste3Score = selectedTaste3.value;
+      }
+      if (selectedTaste4 !== null) {
+        taste4Score = selectedTaste4.value;
+      }
+      if (selectedTaste5 !== null) {
+        taste5Score = selectedTaste5.value;
+      }
 
       var recommendations = {
         "신맛": {
@@ -310,8 +332,8 @@
         }
       };
 
-      var favTasteRecommendation = recommendations[tastes[0]]["favTaste"];
-      var dislikeTasteRecommendation = recommendations[tastes[4]]["dislikeTaste"];
+      var favTasteRecommendation = recommendations[favTaste]["favTaste"];
+      var dislikeTasteRecommendation = recommendations[dislikeTaste]["dislikeTaste"];
 
       var favTasteContentHTML = "";
       for (var i = 0; i < favTasteRecommendation["content"].length; i++) {
@@ -342,5 +364,6 @@
       resultBox.style.display = "block";
     }
   </script>
+
 </body>
 </html>
