@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-          body {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: black;
-            color: white;
-            padding: 0 10px;
-          }
-          .container {
-            padding-top: 10px;
-          }
-          .question {
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid white;
-            background-color: #8B0000;  /* Dark red */
-          }
-          .question p {
-            margin: 0;
-            line-height: 1.1;
-          }
-          .question input[type=radio] {
-            margin-right: 5px;
-          }
-          .spacer {
-            height: 30px;
-          }
-          button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            font-size: 23px;
-            margin-bottom: 20px;
-            background-color: green;
-            color: white;
-          }
-          .result-box {
-            padding: 10px;
-            border: 1px solid white;
-            background-color: #FFFFE0;
-            color: black;
-            text-align: center;
-          }
-          .bold {
-            font-weight: bold;
-            font-size: 15px;
-          }
-          #resultText {
-            font-weight: bold;
-            font-size: 23px;
-          }
-          .title-box {
-            padding: 10px;
-            background-color: green;
-            color: white;
-            font-weight: bold;
-            font-size: 23px;
-            text-align: center;
-          }
-          .padding-bottom {
-            padding-bottom: 20px;
-          }
-          .content {
-            margin-top: 10px;
-          }
-          .hashtags {
-            margin-top: 10px;
-          }
-          .hashtags span {
-            display: inline-block;
-            background-color: green;
-            color: white;
-            padding: 5px 10px;
-            margin-right: 5px;
-            font-size: 13px;
-            border-radius: 5px;
-          }
-          #initialImage {
-            max-width: 90%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-          }
-        </style>
-      </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+        padding: 0 10px;
+      }
+      .container {
+        padding-top: 10px;
+      }
+      .question {
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid white;
+        background-color: #8B0000;  /* Dark red */
+      }
+      .question p {
+        margin: 0;
+        line-height: 1.1;
+      }
+      .question input[type=radio] {
+        margin-right: 5px;
+      }
+      .spacer {
+        height: 30px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 23px;
+        margin-bottom: 20px;
+        background-color: green;
+        color: white;
+      }
+      .result-box {
+        padding: 10px;
+        border: 1px solid white;
+        background-color: #FFFFE0;
+        color: black;
+        text-align: center;
+      }
+      .bold {
+        font-weight: bold;
+        font-size: 15px;
+      }
+      #resultText {
+        font-weight: bold;
+        font-size: 23px;
+      }
+      .title-box {
+        padding: 10px;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        font-size: 23px;
+        text-align: center;
+      }
+      .padding-bottom {
+        padding-bottom: 20px;
+      }
+      .content {
+        margin-top: 10px;
+      }
+      .hashtags {
+        margin-top: 10px;
+      }
+      .hashtags span {
+        display: inline-block;
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        margin-right: 5px;
+        font-size: 13px;
+        border-radius: 5px;
+      }
+      #initialImage {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
 <body>
 
 <div class="quiz-container">
@@ -284,32 +284,31 @@
     for (var i = 0; i < favTasteRecommendation["content"].length; i++) {
       favTasteContentHTML += "<p>" + favTasteRecommendation["content"][i] + "</p>";
     }
-    favTasteContent.innerHTML = favTasteContentHTML;
+    document.getElementById("favTasteContent").innerHTML = favTasteContentHTML;
 
     var favTasteHashtagsHTML = "";
     for (var i = 0; i < favTasteRecommendation["hashtags"].length; i++) {
       favTasteHashtagsHTML += "<span>" + favTasteRecommendation["hashtags"][i] + "</span>";
     }
-    favTasteHashtags.innerHTML = "해시태그: " + favTasteHashtagsHTML;
+    document.getElementById("favTasteHashtags").innerHTML = "해시태그: " + favTasteHashtagsHTML;
 
     var dislikeTasteContentHTML = "";
     for (var i = 0; i < dislikeTasteRecommendation["content"].length; i++) {
       dislikeTasteContentHTML += "<p>" + dislikeTasteRecommendation["content"][i] + "</p>";
     }
-    dislikeTasteContent.innerHTML = dislikeTasteContentHTML;
+    document.getElementById("dislikeTasteContent").innerHTML = dislikeTasteContentHTML;
 
     var dislikeTasteHashtagsHTML = "";
     for (var i = 0; i < dislikeTasteRecommendation["hashtags"].length; i++) {
       dislikeTasteHashtagsHTML += "<span>" + dislikeTasteRecommendation["hashtags"][i] + "</span>";
     }
-    dislikeTasteHashtags.innerHTML = "해시태그: " + dislikeTasteHashtagsHTML;
+    document.getElementById("dislikeTasteHashtags").innerHTML = "해시태그: " + dislikeTasteHashtagsHTML;
 
-    favTasteResult.style.display = "block";
-    dislikeTasteResult.style.display = "block";
-    resultBox.style.display = "block";
+    document.getElementById("favTasteResult").style.display = "block";
+    document.getElementById("dislikeTasteResult").style.display = "block";
+    document.getElementById("resultBox").style.display = "block";
   }
 </script>
 
 </body>
 </html>
-
