@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      body {
-        max-width: 600px;
-        margin: 0 auto;
-        background-color: black;
-        color: white;
-        padding: 0 10px;
-      }
-      .container {
-        padding-top: 10px;
-      }
-      .question {
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid white;
-        background-color: #8B0000;  /* Dark red */
-      }
-      .question p {
-        margin: 0;
-        line-height: 1.1;
-      }
-      .question input[type=radio] {
-        margin-right: 5px;
-      }
-      .spacer {
-        height: 30px;
-      }
-      button {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        font-size: 23px;
-        margin-bottom: 20px;
-        background-color: green;
-        color: white;
-      }
-      .result-box {
-        padding: 10px;
-        border: 1px solid white;
-        background-color: #FFFFE0;
-        color: black;
-        text-align: center;
-      }
-      .bold {
-        font-weight: bold;
-        font-size: 15px;
-      }
-      #resultText {
-        font-weight: bold;
-        font-size: 23px;
-      }
-      .title-box {
-        padding: 10px;
-        background-color: green;
-        color: white;
-        font-weight: bold;
-        font-size: 23px;
-        text-align: center;
-      }
-      .padding-bottom {
-        padding-bottom: 20px;
-      }
-      .content {
-        margin-top: 10px;
-      }
-      .hashtags {
-        margin-top: 10px;
-      }
-      .hashtags span {
-        display: inline-block;
-        background-color: green;
-        color: white;
-        padding: 5px 10px;
-        margin-right: 5px;
-        font-size: 13px;
-        border-radius: 5px;
-      }
-      #initialImage {
-        max-width: 90%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-      }
-    </style>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: black;
+      color: white;
+      padding: 0 10px;
+    }
+    .container {
+      padding-top: 10px;
+    }
+    .question {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid white;
+      background-color: #8B0000;  /* Dark red */
+    }
+    .question p {
+      margin: 0;
+      line-height: 1.1;
+    }
+    .question input[type=radio] {
+      margin-right: 5px;
+    }
+    .spacer {
+      height: 30px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 23px;
+      margin-bottom: 20px;
+      background-color: green;
+      color: white;
+    }
+    .result-box {
+      padding: 10px;
+      border: 1px solid white;
+      background-color: #FFFFE0;
+      color: black;
+      text-align: center;
+    }
+    .bold {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    #resultText {
+      font-weight: bold;
+      font-size: 23px;
+    }
+    .title-box {
+      padding: 10px;
+      background-color: green;
+      color: white;
+      font-weight: bold;
+      font-size: 23px;
+      text-align: center;
+    }
+    .padding-bottom {
+      padding-bottom: 20px;
+    }
+    .content {
+      margin-top: 10px;
+    }
+    .hashtags {
+      margin-top: 10px;
+    }
+    .hashtags span {
+      display: inline-block;
+      background-color: green;
+      color: white;
+      padding: 5px 10px;
+      margin-right: 5px;
+      font-size: 13px;
+      border-radius: 5px;
+    }
+    #initialImage {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
 <body>
 
 <div class="quiz-container">
   <form id="quizForm">
-
+    <div class="title-box">맛으로 보는 나의 성격과 취향</div>
+    <img id="initialImage" src="https://raw.githubusercontent.com/8richfields/simpepersonalitytest/main/back.jpeg" alt="" />
     <div class="question">
       <p>1. 당신은 신맛을 어떻게 생각하시나요?</p>
       <input type="radio" id="taste1" name="taste1" value="매우좋아함">
@@ -228,85 +229,125 @@
         },
         "dislikeTaste": {
           "content": [
-            "오행에서 화가 많은 사람입니다. 이는 일상에서 쓴맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 화의 에너지를 조절하기 위해, 쑥, 당귀, 미나리, 카레, 차 등 쓴맛을 주는 야채나 음식의 섭취를 줄이는 것이 필요합니다.",
+            "오행에서 화가 많은 사람입니다. 이는 일상에서 쓴맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 화의 에너지를 조절하기 위해, 쑥, 당귀, 미나리, 카레, 차 등 쓴맛을 주는 야채나 음식의 섭취를 적절히 하는 것이 필요합니다.",
           ],
-          "hashtags": ["#쑥", "#당귀", "#미나리", "#쓴맛", "#커피", "#흙", "외향적", "직관적", "활동적", "변화를추구", "열정적", "화려한색채"]
+          "hashtags": ["#쑥", "#당귀", "#미나리", "#쓴맛", "#커피", "#흙", "외향적", "능동적", "위로", "즐거움", "친구들", "파티"]
         }
       },
       "단맛": {
         "favTaste": {
           "content": [
-            "오행에서 토가 부족한 사람입니다. 이는 일상에서 단맛의 음식을 부족하게 섭취하는 경향이 있음을 나타냅니다. 토의 에너지를 보충하기 위해 고구마, 감자, 당근 등 단맛이 있는 과일이나 야채를 더 많이 섭취하는 것을 권장합니다. 이와 함께, 황토색의 음식과 옷을 더 많이 선택하는 것이 좋습니다.",
+            "오행에서 비가 부족한 사람입니다. 이는 일상에서 단맛의 음식을 부족하게 섭취하는 경향이 있음을 나타냅니다. 비의 에너지를 보충하기 위해, 과일, 감자, 고구마, 당근, 양파 등 단맛을 주는 식품을 더 많이 섭취하는 것이 좋습니다.",
           ],
-          "hashtags": ["고구마", "#황토색", "#흙", "단맛", "#소화기질환조심"]
+          "hashtags": ["#과일", "#감자", "#고구마", "#당근", "#단맛", "#노랑색", "#햇볕", "#칼슘부족"]
         },
         "dislikeTaste": {
           "content": [
-            "오행에서 토가 많은 사람입니다. 이는 일상에서 단맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 토의 에너지를 조절하기 위해 고구마, 감자, 당근 등 단맛이 있는 과일이나 야채의 섭취를 줄이는 것이 필요합니다. 이와 함께, 황토색의 음식과 옷을 덜 선택하는 것이 좋습니다.",
+            "오행에서 비가 많은 사람입니다. 이는 일상에서 단맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 비의 에너지를 조절하기 위해, 과일, 감자, 고구마, 당근, 양파 등 단맛을 주는 식품을 적절히 섭취하는 것이 필요합니다.",
           ],
-          "hashtags": ["#황토색", "#흙", "단맛", "감각적", "감정형", "안정적", "신뢰할수있는", "현실적", "자연환경", "물리적활동"]
+          "hashtags": ["#과일", "#감자", "#고구마", "#당근", "#단맛", "#노랑색", "#햇볕", "외향적", "적극적", "열정", "도전", "운동", "바다"]
         }
       },
       "매운맛": {
         "favTaste": {
           "content": [
-            "오행에서 금이 부족한 사람입니다. 이는 일상에서 매운맛의 음식을 부족하게 섭취하는 경향이 있음을 나타냅니다. 금의 에너지를 보충하기 위해 고추, 생강 등 매운맛이 있는 음식을 더 많이 섭취하는 것을 권장합니다.",
+            "오행에서 식사를 통해 침의 양이 증가한 사람입니다. 이는 일상에서 매운맛의 음식을 더 많이 섭취하고자 하는 경향이 있음을 나타냅니다. 식사를 통해 침의 양을 적정하게 조절하는 것이 필요합니다.",
           ],
-          "hashtags": ["#화이트색", "#골드색", "#흰색", "#금속", "매운맛", "#폐질환조심"]
+          "hashtags": ["#매운맛", "#고추", "#고추장", "#칠리", "#빨간색", "#열정", "#혈관질환주의"]
         },
         "dislikeTaste": {
           "content": [
-            "오행에서 금이 많은 사람입니다. 이는 일상에서 매운맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 금의 에너지를 조절하기 위해 고추, 생강 등 매운맛이 있는 음식의 섭취를 줄이는 것이 필요합니다. 이와 함께, 화이트, 골드, 은색의 음식과 옷을 덜 선택하는 것이 좋습니다.",
+            "오행에서 식사를 통해 침의 양이 감소한 사람입니다. 이는 일상에서 매운맛의 음식을 피하려는 경향이 있음을 나타냅니다. 식사를 통해 침의 양을 적정하게 조절하는 것이 필요합니다.",
           ],
-          "hashtags": ["#화이트색", "#골드색", "#흰색", "#금속", "#매운맛", "판단형", "사고형", "명확함", "결단력", "독립적", "조직적환경", "체계적일상", "목표지향적업무"]
+          "hashtags": ["#매운맛", "#고추", "#고추장", "#칠리", "#빨간색", "#조용한공원", "#산책로", "#감정형", "#성장", "#발전"]
         }
       },
       "짠맛": {
         "favTaste": {
           "content": [
-            "오행에서 수가 부족한 사람입니다. 이는 일상에서 짠맛의 음식을 부족하게 섭취하는 경향이 있음을 나타냅니다. 수의 에너지를 보충하기 위해, 조개, 해초, 새우젓, 멸치, 간장, 젓갈 등 짠맛을 주는 해산물이나 음식을 더 많이 섭취하는 것을 권장합니다.",
+            "오행에서 비에너지가 부족한 사람입니다. 이는 일상에서 짠맛의 음식을 부족하게 섭취하는 경향이 있음을 나타냅니다. 비의 에너지를 보충하기 위해, 소금, 김, 간장, 멸치 등 짠맛을 주는 음식을 더 많이 섭취하는 것이 좋습니다.",
           ],
-          "hashtags": ["#미역", "#다시마", "#해조류", "#검은색", "#짠맛", "#신장질환"]
+          "hashtags": ["#소금", "#김", "#간장", "#멸치", "#짠맛", "#파란색", "#바다", "#물", "#신체건강조심"]
         },
         "dislikeTaste": {
           "content": [
-            "오행에서 수가 많은 사람입니다. 이는 일상에서 신맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 수의 에너지를 조절하기 위해 바닷속 식물인 미역, 다시마, 해조류 등을 적절히 섭취하는 것이 필요합니다.",
+            "오행에서 비에너지가 많은 사람입니다. 이는 일상에서 짠맛의 음식을 과다하게 섭취하는 경향이 있음을 나타냅니다. 비의 에너지를 조절하기 위해, 소금, 김, 간장, 멸치 등 짠맛을 주는 음식을 적절히 섭취하는 것이 필요합니다.",
           ],
-          "hashtags": ["#미역", "#다시마", "#해조류", "#검은색", "#짠맛", "감정형", "인식형", "유연성", "적응성", "감성적", "조용한환경", "깊은사색", "창의적사고"]
+          "hashtags": ["#소금", "#김", "#간장", "#멸치", "#짠맛", "#파란색", "#바다", "내향적", "감정형", "배려", "예민", "조용한공원", "산책로"]
         }
       }
     };
 
-    var favTasteRecommendation = recommendations[tastes[0]]["favTaste"];
-    var dislikeTasteRecommendation = recommendations[tastes[4]]["dislikeTaste"];
+    var favTaste = getFavTaste(tastes);
+    var dislikeTaste = getDislikeTaste(tastes);
 
-    var favTasteContentHTML = "";
-    for (var i = 0; i < favTasteRecommendation["content"].length; i++) {
-      favTasteContentHTML += "<p>" + favTasteRecommendation["content"][i] + "</p>";
+    if (favTaste && dislikeTaste) {
+      document.getElementById("favTasteContent").innerHTML = recommendations[favTaste]["favTaste"]["content"];
+      document.getElementById("favTasteHashtags").innerHTML = generateHashtags(recommendations[favTaste]["favTaste"]["hashtags"]);
+      document.getElementById("dislikeTasteContent").innerHTML = recommendations[dislikeTaste]["dislikeTaste"]["content"];
+      document.getElementById("dislikeTasteHashtags").innerHTML = generateHashtags(recommendations[dislikeTaste]["dislikeTaste"]["hashtags"]);
+      document.getElementById("favTasteResult").style.display = "block";
+      document.getElementById("dislikeTasteResult").style.display = "block";
+      document.getElementById("resultBox").style.display = "block";
     }
-    document.getElementById("favTasteContent").innerHTML = favTasteContentHTML;
+  }
 
-    var favTasteHashtagsHTML = "";
-    for (var i = 0; i < favTasteRecommendation["hashtags"].length; i++) {
-      favTasteHashtagsHTML += "<span>" + favTasteRecommendation["hashtags"][i] + "</span>";
+  function getFavTaste(tastes) {
+    var favTasteCount = {};
+    var favTaste = "";
+
+    for (var i = 0; i < tastes.length; i++) {
+      if (favTasteCount.hasOwnProperty(tastes[i])) {
+        favTasteCount[tastes[i]] += 1;
+      } else {
+        favTasteCount[tastes[i]] = 1;
+      }
     }
-    document.getElementById("favTasteHashtags").innerHTML = "해시태그: " + favTasteHashtagsHTML;
 
-    var dislikeTasteContentHTML = "";
-    for (var i = 0; i < dislikeTasteRecommendation["content"].length; i++) {
-      dislikeTasteContentHTML += "<p>" + dislikeTasteRecommendation["content"][i] + "</p>";
+    var maxCount = 0;
+
+    for (var taste in favTasteCount) {
+      if (favTasteCount[taste] > maxCount) {
+        maxCount = favTasteCount[taste];
+        favTaste = taste;
+      }
     }
-    document.getElementById("dislikeTasteContent").innerHTML = dislikeTasteContentHTML;
 
-    var dislikeTasteHashtagsHTML = "";
-    for (var i = 0; i < dislikeTasteRecommendation["hashtags"].length; i++) {
-      dislikeTasteHashtagsHTML += "<span>" + dislikeTasteRecommendation["hashtags"][i] + "</span>";
+    return favTaste;
+  }
+
+  function getDislikeTaste(tastes) {
+    var dislikeTasteCount = {};
+    var dislikeTaste = "";
+
+    for (var i = 0; i < tastes.length; i++) {
+      if (dislikeTasteCount.hasOwnProperty(tastes[i])) {
+        dislikeTasteCount[tastes[i]] += 1;
+      } else {
+        dislikeTasteCount[tastes[i]] = 1;
+      }
     }
-    document.getElementById("dislikeTasteHashtags").innerHTML = "해시태그: " + dislikeTasteHashtagsHTML;
 
-    document.getElementById("favTasteResult").style.display = "block";
-    document.getElementById("dislikeTasteResult").style.display = "block";
-    document.getElementById("resultBox").style.display = "block";
+    var maxCount = 0;
+
+    for (var taste in dislikeTasteCount) {
+      if (dislikeTasteCount[taste] > maxCount) {
+        maxCount = dislikeTasteCount[taste];
+        dislikeTaste = taste;
+      }
+    }
+
+    return dislikeTaste;
+  }
+
+  function generateHashtags(hashtags) {
+    var hashtagsHTML = "";
+
+    for (var i = 0; i < hashtags.length; i++) {
+      hashtagsHTML += "<span>" + hashtags[i] + "</span>";
+    }
+
+    return hashtagsHTML;
   }
 </script>
 
